@@ -33,9 +33,24 @@ Dit shop (1)/
 
 ### 2. ຕິດຕັ້ງ ແລະ ເລີ່ມ Backend
 ```bash
-cd "Dit shop (1)/Dit shop/backend"
-npm install
+How to use the new scripts:
+Instead of navigating into the nested subfolders, you can now run these commands directly from the root of your workspace:
+
+To install dependencies for all folders (root, backend, and functions):
+bash
+npm run install:all
+To start the backend server:
+bash
 npm start
+To start the backend server in development mode (using nodemon):
+bash
+npm run dev
+To run the Firebase local emulators:
+bash
+npm run emulate
+All changes are fully recorded in 
+walkthrough.md
+.
 ```
 ເຊີບເວີຈະເຮັດວຽກຢູ່ທີ່ **http://localhost:3000** 
 
