@@ -146,7 +146,7 @@ sequenceDiagram
     alt ມີລະຫັດບັດພ້ອມສົ່ງ
         ຖານຂໍ້ມູນ (Firestore)-->>ລະບົບ (Backend): ສົ່ງຄືນລະຫັດບັດ
         ລະບົບ (Backend)->>ຖານຂໍ້ມູນ (Firestore): ອັບເດດສະຖານະລະຫັດບັດ (is_used = true)
-        ລະບົບ (Backend)->>ຖານ রহস্য (Firestore): ອັບເດດສະຖານະ Order (status = delivered)
+        ລະບົບ (Backend)->>ຖານຂໍ້ມູນ (Firestore): ອັບເດດສະຖານະ Order (status = delivered)
         ລະບົບ (Backend)->>ຖານຂໍ້ມູນ (Firestore): ສົ່ງລະຫັດບັດເຂົ້າກ່ອງຂໍ້ຄວາມຜູ້ໃຊ້ (Inbox)
         ລະບົບ (Backend)-->>ແອດມິນ: ອະນຸມັດສຳເລັດ ລະຫັດສົ່ງເຖິງລູກຄ້າຮຽບຮ້ອຍ
         ລະບົບ (Backend)-->>ລູກຄ້າ: ລະຫັດຈັດສົ່ງເຂົ້າກ່ອງຂໍ້ຄວາມ (Inbox)
