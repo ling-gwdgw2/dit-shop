@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Firebase configuration & cache
+.firebase/
+*-debug.log
+.firebaserc.local
+
+# Secrets and local configurations
+.env
+.env*.local
+**/ .env
+**/*.env
+service-account.json
+**/service-account.json
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite-*
+**/*.sqlite-*
+**/*.db*
+
+# Local test uploads / user data
+**/img/uploads/
+
+# Claude context & temporary IDE/OS files
+.claude/
+**/.claude/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
