@@ -6,7 +6,8 @@
     "install:all": "npm install && npm --prefix \"Dit shop (1)/Dit shop/backend\" install && npm --prefix functions install",
     "start": "npm --prefix \"Dit shop (1)/Dit shop/backend\" start",
     "dev": "npm --prefix \"Dit shop (1)/Dit shop/backend\" run dev",
-    "emulate": "firebase emulators:start"
+    "emulate": "firebase emulators:start",
+    "stop": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$conns = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue; if ($conns) { $conns | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force; Write-Host 'Killed process' $_ } } else { Write-Host 'No server running on port 3000' }\""
   },
   "dependencies": {
     "@dataconnect/generated": "file:src/dataconnect-generated",
