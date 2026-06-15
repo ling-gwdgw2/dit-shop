@@ -1,4 +1,13 @@
 {
+  "name": "dit-shop-root",
+  "version": "1.0.0",
+  "description": "Dit Shop Gift Card Store - Root Configuration",
+  "scripts": {
+    "install:all": "npm install && npm --prefix \"Dit shop (1)/Dit shop/backend\" install && npm --prefix functions install",
+    "start": "npm --prefix \"Dit shop (1)/Dit shop/backend\" start",
+    "dev": "npm --prefix \"Dit shop (1)/Dit shop/backend\" run dev",
+    "emulate": "firebase emulators:start"
+  },
   "dependencies": {
     "@dataconnect/generated": "file:src/dataconnect-generated",
     "firebase": "^12.14.0"
