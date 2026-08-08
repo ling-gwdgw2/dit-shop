@@ -62,7 +62,7 @@ PORT=3000
 ## Step 4 — Install dependencies & run
 
 ```powershell
-cd "D:\Work\Dit shop\backend"
+cd backend
 npm install
 npm start
 ```
