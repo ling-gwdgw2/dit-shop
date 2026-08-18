@@ -5,6 +5,8 @@ backend/node_modules/
 # Environment & credentials
 .env
 backend/.env
+*.env.local
+*.env.*.local
 
 # Database files
 *.sqlite
@@ -12,14 +14,34 @@ backend/.env
 *.sqlite-shm
 database/*.sqlite*
 
+# Docker volumes / files
+.docker/
+
+# Uploads & User Generated Content (keep directory structure)
+frontend/uploads/*
+!frontend/uploads/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+
 # Logs & temp files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
+logs/
+*.pid
+*.seed
 
 # OS & Editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Coverage / Test outputs
+coverage/
+.nyc_output/

@@ -1,8 +1,30 @@
 {
   "name": "ditshop-backend",
   "version": "1.0.0",
-  "description": "Dit Shop Gift Card Store - Backend API",
+  "description": "Dit Shop - Modern Gift Card Store with Node.js & MySQL",
   "main": "server.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ling-gwdgw2/dit-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ling-gwdgw2/dit-shop/issues"
+  },
+  "homepage": "https://github.com/ling-gwdgw2/dit-shop#readme",
+  "keywords": [
+    "gift-card",
+    "ecommerce",
+    "node",
+    "express",
+    "mysql",
+    "open-source",
+    "store",
+    "jwt"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
